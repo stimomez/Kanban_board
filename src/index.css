@@ -4,3 +4,18 @@
 body {
   background: #040404;
 }
+.input-new-task {
+  width: 100%;
+}
+.btn-new-task {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 50ms ease-in-out;
+  -webkit-transition: all 50ms ease-in-out;
+  -moz-transition: all 50ms ease-in-out;
+  -ms-transition: all 50ms ease-in-out;
+  -o-transition: all 50ms ease-in-out;
+}
+.input-new-task:focus + .btn-new-task {
+  max-height: 30px;
+}
